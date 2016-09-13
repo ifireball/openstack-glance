@@ -56,6 +56,9 @@
     - section:  DEFAULT
       option:   log_file
       value:    "{{ glance_log_dir }}/api.log"
+    - section:  DEFAULT
+      option:   allow_anonymous_access
+      value:    "{{ allow_anonymous_access }}"
     - section:  keystone_authtoken
       option:   auth_uri
       value:    "{{ keystone_protocol }}://{{ keystone_hostname }}:{{ keystone_port }}/v2.0"
